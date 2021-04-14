@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'ELAND_Choice_M';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    outline: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+}
+
+.chat_header {
+    width: 100%;
+    background-color: white;
+    height: 12vmin;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    font-weight: bold;
+    text-align: center;
+    display: inline-flex;
+    border-bottom: 1px solid #999;
+}
+
+.chat_header .back {
+    font-size: 6vmin;
+    position: relative;
+    top: 50%;
+    left: 2vmin;
+    transform: translateY(-50%);
+}
+
+.chat_header .ellipsis {
+    font-size: 5vmin;
+    position: relative;
+    top: 50%;
+    right: 2vmin;
+    transform: translateY(-50%);
+}
+
+.chat_header .util_wrap{
+    display: none;
+    position: absolute;
+    right:0;
+    top:2vmin;
+    width: 30vmin;
+    /* height: 32vmin; */
+    border:1px solid #707070;
+    background-color: white;
+    border-radius: 2vmin;
+}
+.chat_header .util_wrap ion-icon{
+    float: right;
+    font-size: 5vmin;
+    margin: 1vmin;
+}
+.chat_header .util_wrap ul{
+    width: 100%;
+    font-size: 3.5vmin;
+    font-weight: normal;
+    clear: both;
+    display: inline-block;
+}
+.chat_header .util_wrap ul li{
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    line-height: 7vmin;
+    width: 80%;
+    border-bottom:1px solid #999;
+}
+.chat_header .util_wrap ul li a{
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    display: inline-block;
+}
+.chat_header .util_wrap ul li:last-child{
+    border:none;
+}
+.chatter {
+    height: 12vmin;
+    font-size: 3.5vmin;
+    margin: 2vmin auto;
+}
+
+
+
+.chatter .chatter_img_wrap {
+    width: 8vmin;
+    height: 8vmin;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.chatter_info_wrap {
+    float: left;
+    height: 8vmin;
+    margin: 1vmin;
+}
+
+.chatter .u_nick {
+    float: left;
+    line-height: 4vmin;
+}
+
+.chatter .chatter_img_wrap img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.panalty_wrap {
+    clear: both;
+    float: left;
+    display: inline-flex;
+    line-height: 3vmin;
+    margin: 0.5vmin;
+}
+
+.chatter .panalty_wrap p {
+    font-size: 3vmin;
+    font-weight: normal;
+    margin-left: 0.5vmin;
+}
+
+.chatter .panalty_img_wrap {
+    width: 2vmin;
+    overflow: hidden;
+}
+
+.chatter .panalty_img_wrap img {
+    width: 100%;
+}
+
+
+.chat_input {
+    position: fixed;
+    /* display: inline-block; */
+    width: 100%;
+    height: 10vmin;
+    bottom: 0;
+    border-top: 1px solid #999;
+    background-color: white;
+}
+
+.chat_input .add_icon {
+    border: 1px solid #666;
+    color: #666;
+    font-size: 5.5vmin;
+    margin: 2vmin;
+    float: left;
+}
+
+.chat_input .emoji {
+    position: absolute;
+    right: 20%;
+    font-size: 6vmin;
+    color: #6c80f1;
+    top: 2vmin;
+}
+
+.chat_input .chat_text {
+    width: 70%;
+    border: none;
+    background-color: #eee;
+    height: 7vmin;
+    margin: 1vmin auto;
+    border-radius: 5vmin;
+    text-indent: 2vmin;
+    font-size: 4vmin;
+}
+
+.chat_input .send {
+    float: right;
+    width: 14%;
+    border: none;
+    height: 6vmin;
+    font-size: 4vmin;
+    margin: 2vmin;
+    background-color: #6c80f1;
+    color: white;
+    border-radius: 2vmin;
+}
+
+.chat {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    margin: 14vmin auto;
+    transition: all .5s;
+}
+
+.chat ul {
+    float: right;
+    list-style: none;
+    display: block;
+    width: 100%;
+}
+
+.chat ul li {
+    clear: both;
+    background-color: #6c80f1;
+    float: right;
+    width: auto;
+    max-width: 65%;
+    height: auto;
+    color: white;
+    font-size: 3.5vmin;
+    line-height: 4vmin;
+    border-radius: 1.5vmin;
+    margin: 1vmin 5vmin 1vmin 0;
+    padding: 1.5vmin 2vmin;
+    position: relative;
+}
+
+
+.chat ul li p {
+    position: absolute;
+    width: 16.5vmin;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    color: #A09E9E;
+    font-size: 2.5vmin;
+}
+
+.chat ul li.sender {
+    clear: both;
+    float: left;
+    background-color: #D6D6D6;
+    color: black;
+    margin: 1vmin 0 1vmin 12vmin;
+    position: relative;
+}
+
+.chat ul li.sender .bg {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 2vmin;
+    border-radius: 2vmin 0 0 0;
+    transform: translateX(-80%);
+    border-top: 2vmin solid #D6D6D6;
+    border-left: 3vmin solid transparent
+}
+
+.sender .sender_img_wrap {
+    position: absolute;
+    top: -5%;
+    left: 0;
+    transform: translateX(-130%);
+    width: 8vmin;
+    height: 8vmin;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+.sender_img_wrap img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.sender .goods_wrap {
+    width: 100%;
+    height: 20vmin;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    /* float: left; */
+    font-family: inherit;
+
+}
+
+.img_wrap {
+    width: 17vmin;
+    height: 17vmin;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 2.5vmin;
+    /* margin-left: 1.5vmin; */
+
+}
+
+.img_wrap .g_photo {
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+
+.g_content {
+    width: 70%;
+    float: left;
+    margin: 2vmin;
+
+}
+
+
+.sender .g_content .g_title {
+    float: left;
+    width: 100%;
+    font-size: 3.5vmin;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    /* margin-bottom: 2vmin; */
+
+}
+
+.g_tag {
+    font-size: 3vmin;
+    width: 100%;
+    padding: 0;
+    color: rgb(78, 73, 73);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+
+.upload_date {
+    font-size: 3vmin;
+    /* float: right; */
+    color: #666;
+    padding: 0;
+    margin-top: 1vmin;
+
+}
+
+.g_price {
+    font-size: 4vmin;
+    font-weight: bold;
+    float: left;
+}

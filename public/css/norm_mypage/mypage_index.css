@@ -1,0 +1,368 @@
+@import url(/css/goods/slick.css);
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'ELAND_Choice_M';
+}
+a{text-decoration: none;}
+
+input {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+}
+
+.info_wrap {
+    width: 100%;
+    height: 48vmin;
+    position: relative;
+    background-color: #6c80f1;
+    border-radius: 0 0 15vmin 0;
+    border: 1px solid #6c80f1;
+}
+.left_wrap{
+    width: 40%;
+    position: relative;
+}
+
+.profile_img {
+    width: 30vmin;
+    height: 30vmin;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+    margin-top: 10vmin;
+    margin-left: 5vmin;
+}
+
+.profile_btn{
+    position: absolute;
+    width: 22vmin;
+    top:36vmin;
+    left: 9vmin;
+    border:none;
+    border-radius: 1vmin;
+    font-size: 3.2vmin;
+}
+
+.right_wrap {
+    width: 55%;
+    height: 28vmin;
+    float: left;
+    margin-top: 11vmin;
+    padding-left: 4vmin;
+
+}
+
+.profile_img>img {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.user_info,
+.review_wrap,
+.penalty_wrap,
+.mileage_wrap {
+    display: inline-flex;
+    width: 100%;
+}
+
+.penalty_wrap>li,
+.review_wrap>li,
+.mileage_wrap>li {
+    height: 5vmin;
+    line-height: 5vmin;
+}
+
+.penalty_wrap li>img,
+.review_wrap li>img,
+.mileage_wrap li>img {
+    height: 85%;
+    float: left;
+}
+
+/*
+.user_info>li>input {
+    border: none;
+    border-radius: 1vmin;
+    font-size: 3.2vmin;
+    padding: 1px 3.5vmin
+} */
+
+.right_wrap li:first-child{
+    padding: 0;
+    margin: 0;
+    width: 75%;
+    color: white;
+    float: left;
+}
+
+.right_wrap li:first-child p {
+    margin: 0 1.5vmin;
+    padding: 0;
+    font-size: 4vmin;
+    float: left;
+}
+
+.right_wrap li:last-child a{
+    width: 25%;
+    text-align: right;
+    font-size: 3vmin;
+    color: #ccc;
+    outline: none;
+}
+
+.user_info>li>a ion-icon{
+    font-size: 5vmin;
+    color:#ccc;
+    text-align: right;
+}
+
+.user_info>li>.u_nick {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    font-size: 6.5vmin;
+    font-weight: bold;
+    display:-webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+
+}
+
+.bottom_wrap{
+    width: 60%;
+    position: absolute;
+    bottom:1.5vmin;
+}
+
+.user_info li:first-child{
+    width: 85%;
+}
+/* .user_info li:nth-child(2n){
+    width: 50%;
+} */
+
+.info_btn_wrap {
+    width: 100%;
+    /* margin-top: 1vmin; */
+    text-align: center;
+}
+
+.info_btn_wrap>input{
+    text-align: center;
+    border: none;
+    padding: 3px 3.2vmin;
+    margin: 0 1.5vmin;
+    background-color: #6c80f1;
+    color: white;
+    border-radius: 1.5vmin;
+    font-size: 3.7vmin;
+    box-shadow: 1px 3px 5px 1px rgba(75, 75, 75, 0.3);
+}
+
+.bg{
+    background-color: #6c80f1;
+    width: 15vmin;
+    height: 15vmin;
+    position: absolute;
+    left:-1vmin;
+    bottom:-15vmin;
+    z-index: -1;
+}
+
+.selling_wrap {
+    padding: 0;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border-radius: 15vmin 0 0 0;
+    border:1px solid white;
+}
+
+.selling_wrap>div {
+    width: 100%;
+    margin-top: 5vmin
+}
+.selling_slider{
+    width: 100%;
+}
+.selling_title{
+    width: 75%;
+    margin: auto;
+    display: flex;
+}
+.selling_title li:first-child{
+    font-size: 5vmin;
+    font-weight: bold;
+    color: #333;
+    flex:3
+}
+.selling_title li:last-child{
+    font-size: 3.5vmin;
+    line-height: 5vmin;
+    text-align: right;
+    color:#999;
+    flex:1
+}
+
+.selling_wrap .selling_slider .g_wrap{
+    width: 100%;
+    height: 32vmin;
+    background-color: #B6C0FE;
+    border-radius: 3vmin;
+    margin: 3vmin auto;
+    box-shadow: 1px 3px 5px 1px rgba(75, 75, 75, 0.3);
+}
+
+/* 판매상품 슬라이더 */
+.selling_slider .g_wrap{
+    transform-origin:50% 50%;
+    transform:scale(0.87);
+    transition:transform .5s linear;
+}
+
+.selling_slider .slick-center .g_wrap{
+    transform:scale(1);
+    transition:transform .5s linear;
+}
+
+.g_wrap .g_right_wrap{
+    width: 53%;
+    float: left;
+    margin-top: 3vmin;
+}
+
+.g_right_wrap .g_title{
+    font-size: 3.5vmin;
+    font-weight: bold;
+    display:-webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.4em;
+    max-height: 2.8em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.g_right_wrap .upload_date{
+    font-size: 2.5vmin;
+    margin: 0.5vmin  0 2vmin 0;
+}
+.g_img_wrap{
+    width: 25vmin;
+    height: 25vmin;
+    border-radius: 2vmin;
+    float: left;
+    margin: 4vmin 2vmin;
+    overflow: hidden;
+}
+.g_img_wrap img{
+    width: 100%;
+}
+
+.g_wrap .view_wrap{
+    display: flex;
+    width: 100%;
+}
+.g_wrap .view_wrap>li{
+    flex: 1;
+    font-size: 3vmin;
+    /* line-height: 3vmin; */
+}
+
+.g_wrap>.no_selling{
+    color:white;
+    font-size: 4vmin;
+    width: 100%;
+    text-align:center;
+    margin: auto 0;
+    padding-top:20%;
+}
+
+
+/* .view_wrap li ion-icon{
+    float: left;
+    font-size: 3.5vmin;
+} */
+/* .view_wrap li:first-child img{
+    width: 5vmin;
+    float: left;
+} */
+.view_wrap li img{
+    width: 5vmin;
+    float: left;
+}
+.view_wrap li>p{
+    line-height: 4vmin;
+    margin-left: 5.5vmin;
+}
+
+.selling_btn_wrap {
+    width: 100%;
+    /* text-align: center; */
+    margin-top:1vmin
+}
+
+.selling_btn_wrap>input{
+    text-align: center;
+    border: none;
+    width: 43%;
+    height: 5.2vmin;
+    /* padding: 3px 3.2vmin; */
+    background-color: #6c80f1;
+    color: white;
+    border-radius: 1.5vmin;
+    font-size: 3vmin;
+    box-shadow: 1px 3px 5px 1px rgba(75, 75, 75, 0.3);
+}
+.selling_btn_wrap>input:first-child{
+    margin-right: 2vmin;
+}
+
+.friends_wrap, .util_wrap, .as_wrap{
+    width: 80%;
+    border-radius: 2vmin;
+    margin: 5vmin auto;
+    box-shadow: 3px 3px 15px 1px rgba(75, 75, 75, 0.3);
+    padding: 2vmin 3vmin;
+}
+
+.friends_wrap li,.util_wrap li, .as_wrap li{
+    margin: 3.5vmin 0;
+    font-size: 4vmin;
+    line-height: 4vmin;
+}
+
+.friends_wrap li ion-icon, .util_wrap li ion-icon, .as_wrap li ion-icon{
+    margin: 0;
+    font-size: 4vmin;
+    padding: 0 3vmin 0 0;
+    float: left;
+}
+
+.as_wrap{
+    margin-bottom: 25vmin;
+}

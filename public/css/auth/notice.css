@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'ELAND_Choice_M';
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+
+.notice_header {
+    width: 100%;
+    background-color: white;
+    height: 12vmin;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+}
+
+.notice_header ion-icon {
+    font-size: 6vmin;
+    position: absolute;
+    top: 50%;
+    left: 2vmin;
+    transform: translateY(-50%);
+}
+
+.notice_header p {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.body_wrap{
+    margin-top: 13vmin;
+    margin-bottom: 100px;
+}
+
+
+.notice_wrap{
+    width: 85%;
+    height: auto;
+    margin: 5vmin auto;
+    padding: 2vmin;
+    border-radius: 3vmin;
+    box-shadow: 2px 2px 5px 1px rgba(75,75,75, 0.3);
+}
+
+.title_wrap{
+    display: inline-flex;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 1vmin auto 2vmin;
+}
+
+.title_wrap .n_title{
+    display: inline-table;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 5vmin;
+    font-weight: bold;
+}
+
+.title_wrap .n_title::before{
+    content: '';
+    display: block;
+    width: 110%;
+    height: 70%;
+    position:absolute;
+    top:2.5vmin;
+    left:-5%;
+    background-color: rgba(220, 188, 217, 1);
+    z-index: -2;
+}
+.title_wrap>div{
+    font-size: 4vmin;
+    position: absolute;
+    top: 50%;
+    right: 3vmin;
+    transform: translateY(-50%);
+}
+.title_wrap>div>img{
+    width: 100%;
+}
+.notice_wrap .n_info_wrap{
+    display: inline-block;
+    font-size: 4vmin;
+    width: 100%;
+}
+
+.notice_wrap .n_info_wrap .uploader{
+    float: left;
+}
+
+.notice_wrap .n_info_wrap .upload_d{
+    float: right;
+}
+.con_wrap{
+    font-size: 4.2vmin;
+    /* margin: 2vmin auto; */
+    white-space: pre-wrap;
+    margin: 1vmin auto 2vmin;
+}
+
+.con_wrap>img{
+    width: 100%;
+    margin: auto;
+}

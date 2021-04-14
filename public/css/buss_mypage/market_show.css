@@ -1,0 +1,377 @@
+@font-face {
+    font-family: "ELAND_Choice_M";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "ELAND_Choice_M";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    outline: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+}
+
+.market_profile_header {
+    width: 100%;
+    background-color: white;
+    height: 12vmin;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+}
+
+.market_profile_header .back {
+    font-size: 6vmin;
+    position: absolute;
+    top: 50%;
+    left: 2vmin;
+    transform: translateY(-50%);
+}
+
+.market_profile_header p {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.market_profile_header .ellipsis {
+    font-size: 5vmin;
+    position: absolute;
+    top: 50%;
+    right: 2vmin;
+    transform: translateY(-50%);
+}
+
+.profile_wrap {
+    width: 100%;
+    height: 100%;
+    margin: 17vmin auto 100px;
+    position: relative;
+}
+
+
+
+#chart {
+    position: relative;
+    height: 50vmin;
+    width: 100%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.profile_wrap .img_wrap {
+    width: 35vmin;
+    height: 35vmin;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile_wrap .img_wrap img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+ #chartjs-legend {
+    position: absolute;
+    top:0;
+    right:2vmin;
+    width: 15vmin;
+    height: 25vmin;
+}
+
+#chartjs-legend ul{
+    clear: both;
+    display: inline-block;
+}
+#chartjs-legend ul li{
+    line-height: 4vmin;
+}
+#chartjs-legend ul li div{
+    width: 5vmin;
+    height: 1.5vmin;
+    float: left;
+    margin-top: 1vmin;
+}
+#chartjs-legend ul li p{
+    float: left;
+    font-size: 3vmin;
+    margin-left: 1vmin;
+}
+
+#chartjs-legend ul li .pink{
+    background-color: #F3A7A7;
+}
+#chartjs-legend ul li .yellow{
+    background-color: #F3F084;
+}
+#chartjs-legend ul li .green{
+    background-color: #B6DBB4;
+}
+#chartjs-legend ul li .orange{
+    background-color: #F9CFAE;
+}
+
+#chartjs-legend ul li .purple{
+    background-color: #DCB6D5;
+}
+
+.b_info_wrap{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.b_info_wrap .ex_b_name{
+    font-weight: bold;
+    font-size: 4.5vmin;
+    margin:2vmin auto 1vmin;
+}
+.like_wrap{
+    width: 100%;
+}
+
+.like_wrap ul{
+    display: inline-flex;
+}
+.like_wrap ul li div{
+ float: left;
+ width: 5vmin;
+
+ margin: 0 1vmin;
+}
+.like_wrap ul li div img{
+    width: 100%;
+}
+.like_wrap ul li p{
+    float: left;
+    font-size: 4.5vmin;
+}
+
+.follow{
+    border:none;
+    background-color: white;
+    border-radius: 2vmin;
+    box-shadow: 1px 3px 5px 1px rgba(75,75,75, 0.3);
+    font-size: 4vmin;
+    padding :1vmin 1.5vmin;
+
+}
+
+.time_wrap, .price_wrap{
+    width: 92%;
+    margin: 3vmin auto;
+}
+
+.time_wrap>p, .price_wrap>p{
+    font-size: 4vmin;
+
+}
+
+.time_wrap .time_box{
+    width: 96%;
+    padding: 2vmin;
+    border-radius: 3vmin;
+    margin: auto;
+    font-size: 3.5vmin;
+    line-height: 4.5vmin;
+    box-shadow: 1px 3px 5px 1px rgba(100, 100, 100, 0.3);
+
+}
+
+.price_wrap div{
+    display: inline-flex;
+    width: 96%;
+    padding: 2vmin;
+    border-radius: 3vmin;
+    margin: auto;
+    font-size: 3.5vmin;
+    box-shadow: 1px 3px 5px 1px rgba(100, 100, 100, 0.3);
+}
+
+.price_wrap div ul{
+    clear: both;
+    display: block;
+    flex:1 ;
+}
+.price_wrap div ul li{
+    margin: 1.5vmin auto;
+}
+.chat_btn_wrap{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.chat_btn_wrap .chat_btn{
+    clear: both;
+    width: 92%;
+    height: 7vmin;
+    background-color: #6c80f1;
+    border:none;
+    border-radius: 2vmin;
+    color:white;
+    text-align: center;
+    font-size:4vmin ;
+
+}
+
+
+.holding_goods_wrap{
+    width: 94%;
+    margin: 7vmin auto 100px;
+}
+
+.holding_goods_wrap>p{
+    font-size: 4.2vmin;
+}
+
+.holding_goods_wrap>a {
+    width: 100%;
+    height: 20vmin;
+    border-radius: 2vmin;
+    display: flex;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    margin: 3vmin auto 1.5vmin;
+    font-family: inherit;
+    padding: 0;
+}
+.goods{
+    width: 100%;
+}
+
+ .holding_goods_wrap .goods_img_wrap{
+    width: 18vmin;
+    height: 18vmin;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    border-radius: 2.5vmin;
+    margin-left: 2vmin;
+
+}
+.goods .goods_img_wrap .reserved_mark{
+    display: none;
+}
+
+.goods.reserved .goods_img_wrap .reserved_mark{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(70, 70, 70, 0.8);
+    text-align: center;
+    margin: auto;
+    z-index: 3;
+    display: table;
+}
+.goods_img_wrap .reserved_mark>p{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 4vmin;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.goods_img_wrap .g_photo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.goods_img_wrap .like{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 5.5vmin;
+}
+
+.goods .g_content{
+    float: left;
+    text-align: left;
+    margin: 2vmin;
+    width: 72%;
+    height: 17vmin;
+    position: relative;
+}
+
+
+.g_content .g_title{
+    width: 100%;
+    font-size: 4vmin;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+.g_content .g_tag{
+    font-size: 2.8vmin;
+    padding: 0;
+    margin: 1vmin auto 3.5vmin;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.g_state_wrap .g_price{
+    font-size: 4.5vmin;
+    font-weight: bold;
+    width: 50%;
+    float: left;
+    position: absolute;
+    bottom:1vmin;
+}
+
+.g_state_wrap .upload_date{
+    font-size: 3vmin;
+    float: right;
+    color: #666;
+    padding: 0;
+    margin: 1vmin 0 0 0;
+    position: absolute;
+    right:0;
+    bottom:1vmin;
+}

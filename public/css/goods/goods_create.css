@@ -1,0 +1,469 @@
+@import url(slick.css);
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'ELAND_Choice_M';
+}
+
+.map_wrap {
+    border-bottom: 1px solid #6c80f1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.map_wrap .map {
+    position: relative;
+    /* display: none; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    overflow: hidden;
+}
+
+.addEvent {
+    display: none;
+    position: absolute;
+    text-align: left;
+    margin: 0px auto;
+    width: 100%;
+    bottom: 11vh;
+    font-size: 1em;
+}
+
+#ex_b_hour_left {
+    width: 85%;
+}
+
+#ex_b_hour_right {
+    width: 5%;
+    text-align: right;
+}
+
+#ex_b_hour_right>a {
+    text-decoration: none;
+}
+
+#ex_modal_header {
+    padding-top: 3vw;
+    text-align: right;
+    padding-right: 4.5vw;
+    display: flex;
+    padding-bottom: 0.7vw;
+}
+
+.exchange_main {
+    width: 90%;
+    background-color: white;
+    margin: 0px auto;
+    border-radius: 20px;
+    height: 30vh;
+}
+
+hr {
+    width: 90%;
+    border: solid 1px #EADBDB;
+}
+
+#ex_b_hour {
+    display: flex;
+}
+
+#ex_modal_title>small {
+    padding-left: 1.5vw;
+}
+
+#ex_modal_title,
+#ex_b_hour,
+#ex_modal_text_box {
+    text-indent: 1.1em;
+}
+
+#ex_modal_select {
+    height: 40%;
+    text-align: center;
+}
+
+#ex_modal_select>button {
+    width: 85%;
+    height: 4vh;
+    border-radius: 10px;
+    border: 0px;
+    background-color: rgb(80, 80, 213);
+    color: white;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#exchange_info {
+    z-index: 999;
+}
+
+.write_header {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    height: 12vmin;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    line-height: 12vmin;
+    border-bottom: 1px solid #999;
+}
+
+#title_back {
+    position: absolute;
+    left: 2vmin;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: initial;
+}
+
+#title_back ion-icon {
+    font-size: 6vmin;
+    /* color: #6c80f1; */
+}
+
+#title_text {
+    font-size: 5vmin;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#blank {
+    width: 10%;
+}
+
+#writeForm {
+    margin-bottom: 11vh;
+}
+
+.write_wrap {
+    padding-top: 14vmin;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3vmin;
+}
+
+.write_img_wrap {
+    margin-bottom: 2vmin;
+    width: 100%;
+    height: 16vmin;
+    position: relative;
+}
+
+.write_img_wrap .img_upload {
+    width: 15vmin;
+    height: 15vmin;
+    background-color: #ccc;
+    border-radius: 3vmin;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.img_upload>.btn_file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.img_upload img {
+    max-width: 100%;
+    position: absolute;
+    background-color: #ccc;
+    top: 0;
+    left: 0;
+}
+
+.photo_slider {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.photo_slider li {
+    width: 15vmin;
+    height: 15vmin;
+    list-style: none;
+    background-color: #ccc;
+    border-radius: 3vmin;
+    overflow: hidden;
+    position: relative;
+    margin-right: 3vw;
+    float: left;
+}
+
+.photo_slider li img {
+    width: 100%;
+    position: absolute;
+    background-color: #ccc;
+    top: 0;
+    left: 0;
+}
+
+.photo_slider .slick-prev {
+    position: absolute;
+    width: 0;
+    height: 0;
+    text-indent: -9999px;
+    outline: none;
+    border: none;
+}
+
+.photo_slider .slick-next {
+    position: absolute;
+    width: 0;
+    height: 0;
+    text-indent: -9999px;
+    outline: none;
+    border: none;
+}
+
+.g_title,
+.cate_wrap,
+.filter_wrap>input,
+.g_brand {
+    width: 100%;
+    height: 8vmin;
+    border: 1px solid #ccc;
+    border-radius: 1.5vmin;
+    margin: 1vmin auto;
+    outline: none;
+    font-size: 3vmin;
+}
+
+.g_title,
+.filter_wrap>input {
+    text-indent: 2vmin;
+}
+
+.g_category {
+    background-color: white;
+    border-radius: 1.5vmin;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-indent: 2vmin;
+    font-size: 3vmin;
+}
+
+.g_release {
+    display: flex;
+    width: 100%;
+}
+
+.g_release>input.on {
+    background-color: #6c80f1;
+    color: white;
+}
+
+.g_release>input {
+    /* flex:1; */
+    margin: auto;
+    width: 31%;
+    height: 8vmin;
+    border: 1px solid #ccc;
+    border-radius: 1.5vmin;
+    background-color: white;
+    outline: none;
+    text-align: center;
+    font-size: 3.2vmin;
+}
+
+.buy_day_wrap,
+.g_size_wrap {
+    width: 100%;
+    height: 14vmin;
+    margin: 1vmin auto;
+    font-size: 3.5vmin;
+}
+
+.buy_day_wrap>div,
+.g_size_wrap>div {
+    margin-bottom: 0.7vmin;
+}
+
+.buy_day_wrap .day_wrap {
+    width: 100%;
+}
+
+.day_wrap>label {
+    line-height: 7vmin;
+}
+
+.day_wrap>label>input {
+    position: relative;
+    top: 0.5vmin;
+}
+
+.g_size {
+    width: 100%;
+    display: flex;
+}
+
+.g_size>input {
+    margin: auto;
+    width: 30%;
+    height: 7.5vmin;
+    border: 1px solid #ccc;
+    border-radius: 1.5vmin;
+    background-color: white;
+    outline: none;
+    font-size: 3vmin;
+    text-indent: 2vmin;
+}
+
+.g_price_wrap,
+.g_location_wrap {
+    width: 100%;
+    margin: 1vmin auto;
+    float: left;
+}
+
+.g_price_wrap>.g_price,
+.g_location_wrap>.ex_lo_la,
+.day_wrap>.g_buy_day {
+    width: 65%;
+    height: 7.5vmin;
+    border: 1px solid #ccc;
+    border-radius: 1.5vmin;
+    outline: none;
+    float: left;
+    text-indent: 2vmin;
+    font-size: 3vmin;
+}
+
+.g_location_wrap {
+    position: relative;
+    padding-bottom: 1.5vmin;
+}
+
+.g_location_wrap>.ex_lo_la {
+    text-indent: 8vmin;
+}
+
+.g_location_wrap>img {
+    position: absolute;
+    left: 2vmin;
+    top: 1.5vmin;
+    width: 5vmin;
+    color: #ccc;
+    filter: opacity(0.6) invert(100%);
+}
+
+.g_price_wrap>.btn_nego,
+.g_location_wrap>.btn_direct {
+    width: 30%;
+    height: 8vmin;
+    border: 1px solid #666;
+    border-radius: 1.5vmin;
+    background-color: white;
+    outline: none;
+    text-align: center;
+    font-size: 2.5vmin;
+    float: right;
+}
+
+.g_price_wrap>.btn_nego.on,
+.g_location_wrap>.btn_direct.on {
+    background-color: #6c80f1;
+    color: white;
+}
+
+.g_content {
+    width: 100%;
+    border: 1px solid #ccc;
+    resize: none;
+    outline: none;
+    white-space: pre-line;
+    font-size: 3vmin;
+}
+
+.chk_agree {
+    font-size: 2.7vmin;
+    color: #6c80f1;
+    margin: 2vmin auto;
+}
+
+.chk_agree>input {
+    position: relative;
+    top: 0.5vmin;
+}
+
+.write_footer {
+    margin: 0px auto;
+    padding: 0;
+    bottom: 0;
+    background-color: #6c80f1;
+    border-radius: 3vmin;
+    height: 10vmin;
+    line-height: 15vmin;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.write_footer>input {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 4.5vmin;
+    color: white;
+    font-family: inherit;
+    vertical-align: text-bottom;
+}
+
+
+/* 지도 마커 정보창 디자인 */
+
+.infowindow {
+    width: 150px;
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.infowindow>div {
+    margin: auto;
+    text-align: center;
+}
+
+#subway_btn {
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c80f1;
+    color: white;
+    margin-top: 2px;
+    font-size: 12px;
+}

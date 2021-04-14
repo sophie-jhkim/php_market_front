@@ -1,0 +1,531 @@
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'ELAND_Choice_M';
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.choose {
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    background-color: #6c80f1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 56px;
+    transition: all .5s ease;
+    z-index: 999;
+    border: 1px solid black;
+}
+
+.choose select {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+    color: white;
+    border-right: 1px solid white;
+    font-family: inherit;
+    z-index: 999;
+}
+
+.choose select option {
+    background-color: white;
+    color: black;
+}
+
+.map_wrap {
+    border-bottom: 1px solid #6c80f1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: -100%;
+    margin-top: 81px;
+    transition: all .5s ease;
+    z-index: 5;
+}
+
+.map_wrap.on {
+    top: 0;
+    margin-top: -12.5vh;
+}
+
+.map_wrap.on .map {
+    display: block;
+}
+
+.map_wrap .map {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    overflow: hidden;
+}
+
+.map_wrap .btn_map {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    border: none;
+    border-bottom: 1px solid #6c80f1;
+    background-color: rgb(255, 255, 255);
+    height: 3.5vh;
+    outline: none;
+    font-size: 0.8em;
+}
+
+.addEvent {
+    display: none;
+    position: absolute;
+    text-align: left;
+    margin: 0px auto;
+    width: 100%;
+    bottom: 16vh;
+    font-size: 1em;
+}
+
+#ex_b_hour_left {
+    width: 80%;
+}
+
+#ex_b_hour_right {
+    width: 5%;
+    text-align: right;
+}
+
+#ex_b_hour_right>a {
+    text-decoration: none;
+    padding-top: 0px;
+}
+
+/* #ex_modal_header {
+    padding-top: 3vw;
+    text-align: right;
+    padding-right: 4.5vw;
+    display: flex;
+    padding-bottom: 0.7vw;
+}
+
+.exchange_main {
+    width: 90%;
+    background-color: white;
+    margin: 0px auto;
+    border-radius: 20px;
+    height: 30vh;
+}
+
+hr {
+    width: 90%;
+    border: solid 1px #EADBDB;
+}
+
+#ex_b_hour {
+    display: flex;
+}
+
+#ex_modal_title>small {
+    padding-left: 1.5vw;
+}
+
+#ex_modal_title,
+#ex_b_hour,
+#ex_modal_text_box {
+    text-indent: 1.1em;
+}
+
+#ex_modal_select {
+    height: 40%;
+    text-align: center;
+}
+
+#ex_modal_select>button {
+    width: 85%;
+    height: 4vh;
+    border-radius: 10px;
+    border: 0px;
+    background-color: rgb(80, 80, 213);
+    color: white;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#exchange_info {
+    z-index: 999;
+} */
+
+.ad {
+    display: flex;
+    position: relative;
+    margin: auto;
+    top: 120px;
+    width: 94%;
+    height: 100px;
+    background-color: #ffe5b2;
+}
+
+.ad>.ad_img_wrap {
+    width: 80px;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    margin: 10px 10px 10px 20px;
+    float: left;
+}
+
+.ad>.ad_img_wrap>img {
+    width: 100%;
+}
+
+.ad .ad_title {
+    float: left;
+}
+
+.ad p {
+    font-family: inherit;
+    margin: auto;
+    font-size: 15px;
+    margin-left: 3vmin;
+    line-height: 18px;
+}
+
+.ad_mark {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 20px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
+
+.goods_container {
+    width: 95%;
+    height: 100%;
+    margin: 120px auto;
+    position: relative;
+    font-family: 'ELAND_Choice_M';
+}
+
+.goods_list {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding-bottom: 100px;
+}
+
+.goods {
+    width: 100%;
+    height: 20vmin;
+    border-radius: 20px;
+    display: flex;
+    /* overflow: hidden; */
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    /* float: left; */
+    margin: 4% auto;
+    font-family: inherit;
+}
+.good_img{
+    width: 23%;
+    clear: both;
+    float: left;
+}
+
+.img_wrap {
+    width: 18vmin;
+    height: 18vmin;
+    overflow: hidden;
+    /* float: left; */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 2.5vmin;
+    margin-left: 2vmin;
+}
+
+.g_photo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.like {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 5.5vmin;
+}
+
+.g_content {
+    width: 75%;
+    height: auto;
+    float: left;
+    margin: 2vmin 0;
+    position: relative;
+}
+.g_content .g_title_wrap{
+    width: 95%;
+}
+
+.g_title {
+    /* width: 100%; */
+    font-size: 4vmin;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    margin-bottom: 0.5vmin;
+}
+
+.g_tag {
+    width: 100%;
+    font-size: 3.5vmin;
+    padding: 0;
+    color: rgb(78, 73, 73);
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.g_state_wrap{
+    height: 4vmin;
+    display: inline-block;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+}
+
+.g_state_wrap .g_price {
+    font-size: 4.5vmin;
+    font-weight: bold;
+    float: left;
+}
+
+.g_state {
+    float: left;
+    /* margin-top: 3px; */
+    font-weight: normal;
+    font-size: 2.5vmin;
+    background-color: #7d0491;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    margin-left: 5px;
+    padding: 3px;
+}
+
+
+.upload_date {
+    font-size: 3vmin;
+    line-height: 5vmin;
+    float: right;
+    color: #666;
+    padding: 0;
+
+}
+
+.g_state2 {
+    font-weight: normal;
+    font-size: 8px;
+    background-color: #e14b33;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    margin-left: 5px;
+    padding: 3px;
+}
+
+
+/* 반응형 */
+
+
+/* .goods_container {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+
+@media (max-width:1920px) {
+    .goods_list {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    }
+} */
+
+
+/* 지도 마커 거래소 정보창 디자인 */
+
+.infowindow {
+    width: 150px;
+    font-size: 15px;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+.infowindow>div {
+    margin: auto;
+    text-align: center;
+}
+
+#subway_btn {
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c80f1;
+    color: white;
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+
+/* 거래소 정보 맵 모달창*/
+.bottom_div {
+    display: block;
+    background-color: white;
+    width: 80%;
+    height: auto;
+    position: absolute;
+    margin: auto;
+    padding: 3vmin 4vmin;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4vmin;
+    box-shadow: 1px 3px 5px 1px rgba(100, 100, 100, 0.3);
+}
+
+.ex_info {
+    height: auto;
+    display: inline-flex;
+    width: 100%;
+    border-bottom : 1px solid #ccc;
+}
+
+.ex_info_wrap {
+    float: left;
+    width: 90%;
+}
+
+.ex_info p {
+    font-size: 4vmin;
+}
+
+.ex_info p span {
+    font-size: 3vmin;
+    padding: 0 1vmin;
+}
+
+.ex_info a{
+    font-size: 6vmin;
+    width: 10%;
+    padding:0;
+
+}
+
+.ex_info .b_hour {
+    font-size: 3vmin;
+    padding: 1vmin 0;
+}
+
+.ex_info ion-icon {
+    position: relative;
+    right: 0;
+    top: 0;
+    font-size: 6vmin;
+    color: #666;
+
+}
+
+.ex_cont {
+    display: flex;
+    width: 100%;
+    padding: 1vmin 0;
+    margin: auto;
+    height: 20vmin;
+}
+
+.ex_cont ul {
+    list-style: none;
+    padding: 1vmin;
+    margin: 0;
+    float: left;
+    font-size: 4.3vmin;
+    font-weight: bold;
+    width: 30%;
+    float: left;
+
+}
+.ex_cont ul li{
+    padding: 0.5vmin 0;
+}
+.ex_cont ul:nth-child(2n){
+    color:#6c80f1;
+    width: 40%;
+}
+
+.ex_cont .img_wrap {
+    width: 19vmin;
+    height: 19vmin;
+    overflow: hidden;
+    border-radius: 2vmin;
+
+}
+
+.ex_cont .img_wrap>img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.bottom_div .btn_wrap{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.bottom_div .write_btn {
+    margin: auto;
+    width: 95%;
+    background-color: #6c80f1;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 1vmin;
+    outline: none;
+    font-size: 4vmin;
+}
+

@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'ELAND_Choice_M';
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+}
+
+
+.market_update_header {
+    width: 100%;
+    background-color: white;
+    height: 12vmin;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+}
+
+.market_update_header a {
+    display: block;
+    height: 100%;
+    font-size: 6vmin;
+    position: absolute;
+}
+
+.market_update_header ion-icon {
+    font-size: 6vmin;
+    position: absolute;
+    top: 50%;
+    left: 2vmin;
+    transform: translateY(-50%);
+}
+
+.market_update_header p {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.update_container{
+    width: 90%;
+    margin: auto;
+    text-align:center ;
+    margin-bottom: 100px;
+}
+.img_update_wrap{
+    position: relative;
+    width: 40vmin;
+    margin: 20vmin auto 5vmin;
+}
+
+.img_update_wrap .img_wrap{
+    margin:auto;
+    width: 40vmin;
+    height: 40vmin;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img_update_wrap .img_wrap img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.btn_file{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 8vmin;
+    height: 8vmin;
+    border-radius: 50%;
+    display: table;
+    background-color:#ccc;
+}
+
+.btn_file ion-icon{
+    font-size: 6vmin;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nick_wrap input{
+    text-align:center;
+    font-size: 4.5vmin;
+    width: 60%;
+    height: 8vmin;
+    border-radius: 1vmin;
+    background-color:white;
+    border:none;
+    outline:none;
+    font-weight: bold;
+    box-shadow: 1px 2px 3px 1px rgba(80, 80, 80, 0.3);
+
+}
+.nick_wrap p{
+    margin-top:1vmin;
+    font-size: 3vmin;
+    color:#333
+}
+.hour_title, .goods_info_wrap .p_title{
+    text-align: left;
+    font-size: 4vmin;
+    width: 100%;
+    padding-top: 5vmin;
+}
+.b_hour_wrap, .max_num, .fee, .goods_info_wrap{
+    width: 100%;
+    margin:3vmin auto;
+}
+
+.b_hour_wrap div{
+    display: inline-flex;
+    width: 100%;
+    margin: auto 0;
+}
+
+.b_hour_wrap div ul, .max_num div, .fee div, .p_wrap ul{
+    float: left;
+    text-align: left;
+    font-size: 3.5vmin;
+    margin-bottom: 1vmin;
+}
+
+.b_hour_wrap div ul:first-child{
+    color: #666;
+    width: 30%;
+}
+
+.b_hour_wrap div ul:first-child li{
+    padding: 3.8vmin 0;
+}
+
+.max_num .num_title, .fee .fee_title{
+    width: 27%;
+    float: left;
+    font-size: 3.7vmin;
+    line-height: 8vmin;
+}
+
+.max_num div:last-child, .fee div:last-child{
+    width: 60%;
+}
+
+.b_hour_wrap div ul:last-child{
+    width:90%;
+    /* clear: both;
+    float: right; */
+    text-align: right;
+}
+
+.b_hour_wrap div ul:last-child li{
+    padding: 2vmin 0;
+}
+
+.b_hour_wrap div ul li .index{
+    border:none;
+    background-color: #DBDBDB;
+    padding: 2vmin;
+    border-radius: 1vmin;
+    width: 70%;
+    font-size: 3.7vmin;
+}
+
+.max_num div:last-child>input, .fee div:last-child>input{
+    border:none;
+    background-color: #DBDBDB;
+    padding: 2vmin;
+    border-radius: 1vmin;
+    width: 100%;
+    font-size: 3.7vmin;
+}
+
+
+.b_hour_wrap div ul:last-child li input[type=checkbox]{
+    position: relative;
+    right:0;
+    top: 0.5vmin;
+}
+
+.goods_info_wrap{
+    clear: both;
+}
+
+.goods_info_wrap .p_title a{
+    float: right;
+    font-size: 4vmin;
+    margin-right: 5vmin;
+    color:#999
+}
+.p_wrap{
+    display: inline-flex;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.p_wrap ul li input{
+    border:none;
+    width: 85%;
+    background-color: #DBDBDB;
+    padding: 2vmin;
+    border-radius: 1vmin;
+    font-size: 3.7vmin;
+    margin: 1vmin auto;
+}
+
+input[type=submit]{
+    width: 95%;
+    border:none;
+    background-color: #6c80f1;
+    color: white;
+    padding: 1.5vmin 0;
+    margin-top: 2vmin;
+    border-radius: 2vmin;
+    font-size: 3.5vmin;
+
+}

@@ -1,0 +1,501 @@
+@import url(slick.css);
+
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'ELAND_Choice_M';
+}
+
+.detail_header {
+    width: 100%;
+    background-color: white;
+    height: 49px;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+}
+
+.detail_header_wrap {
+    width: 100%;
+    background-color: white;
+    height: 12vmin;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+}
+.detail_header_wrap{
+    list-style: none;
+}
+
+.detail_header_wrap li ion-icon{
+    font-size: 6vmin;
+    list-style: none;
+    float: left;
+    text-align: center;
+    color: black;
+}
+
+/* .detail_header_wrap li a {
+    font-size: 21px;
+    color: #5d5d5d;
+    ;
+} */
+
+.detail_header_wrap .back {
+    position: absolute;
+    top: 50%;
+    left: 2vmin;
+    transform: translateY(-50%);
+}
+
+.detail_header_wrap .g_category {
+    flex: 4;
+    line-height: 49px;
+
+}
+
+.detail_header_wrap .share {
+    position: absolute;
+    top: 50%;
+    right: 2vmin;
+    transform: translateY(-50%);
+}
+
+.visual_wrap {
+    position: relative;
+    top: 49px;
+    width: 100%;
+    height: 110vw;
+    overflow: hidden;
+}
+
+.visual {
+    width: 100%;
+    height: 100%;
+    /* margin: auto; */
+    /* position: relative; */
+    /* top: 0; */
+    /* left: 0; */
+}
+
+.visual_wrap .visual img {
+    width: 100%;
+    /* min-height: 100%; */
+    max-height: 100%;
+    position: relative;
+    object-fit: cover;
+    top: 10%;
+}
+
+.visual .slick-prev {
+    background: url(../../images/icons/left.png) no-repeat left top;
+    background-size: 3vw;
+    position: absolute;
+    left: 10px;
+    top: 45%;
+    width: 3vw;
+    height: 6vw;
+    z-index: 10;
+    text-indent: -9999px;
+    outline: none;
+    border: none;
+    /* background-size: 23px; */
+    cursor: pointer;
+}
+
+.visual .slick-next {
+    background: url(../../images/icons/right.png) no-repeat right top;
+    background-size: 3vw;
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    width: 3vw;
+    height: 6vw;
+    z-index: 10;
+    text-indent: -9999px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.visual .slick-dots {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    bottom: 12vw;
+
+}
+
+.visual .slick-dots li {
+    display: inline-block;
+}
+
+.visual .slick-dots li button {
+    background: white;
+    width: 10vw;
+    height: 1vw;
+    text-indent: -9999px;
+    margin-right: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none
+}
+
+.visual .slick-dots .slick-active button {
+    background: #6c80f1;
+}
+
+.detail_con_wrap {
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    border-radius: 25px 25px 0 0;
+    /* margin-top: 10px; */
+    position: relative;
+    font-family: inherit;
+}
+
+.con_wrap_top {
+    width: 90%;
+    height: 16vw;
+    margin: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.detail_con_wrap .u_profile_img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    overflow: hidden;
+    float: left;
+    margin-top: 3vw;
+}
+
+.detail_con_wrap .u_nick {
+    float: left;
+    margin-left: 10px;
+    line-height: 9vw;
+    font-size: 4.5vw;
+}
+
+.detail_con_wrap .u_profile_img img {
+    width: 10vw;
+}
+
+.detail_con_wrap .ellipsis {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    font-size: 3.5vw;
+    background-color: #D2D9FB;
+    text-align: center;
+    float: right;
+    margin-top: 5vw;
+}
+
+.detail_con_wrap .ellipsis ion-icon {
+    color: #6c80f1;
+    margin-top: 0.7vw;
+}
+
+.con_wrap {
+    width: 90%;
+    margin: auto;
+}
+
+.g_title {
+    clear: both;
+    text-align: left;
+    font-size: 5.5vw;
+    font-weight: bold;
+    padding: 2vw 0;
+}
+
+.state_wrap>p {
+    padding: 0;
+    margin: 0;
+    font-size: 3.5vw;
+    float: left;
+}
+
+.state_wrap span {
+    float: left;
+    margin: 0;
+    font-weight: normal;
+    font-size: 2.5vw;
+    background-color: #7d0491;
+    color: white;
+    border-radius: 2vw;
+    text-align: center;
+    margin-left: 5px;
+    padding: 1vw;
+}
+
+.g_content {
+    clear: both;
+    width: 100%;
+    height: auto;
+    font-size: 4vw;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    white-space: pre-line;
+}
+
+.loca_wrap {
+    margin-top: 10px;
+}
+
+.loca_wrap>div {
+    width: 90%;
+    margin: 5px auto;
+    padding: 0;
+}
+
+.loca_wrap .loca {
+    float: left;
+    font-weight: bold;
+    font-size: 4.5vw;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.loca_wrap .route {
+    float: left;
+    font-size: 3.5vw;
+    line-height: 5vw;
+    padding: 0;
+    margin: 0;
+}
+
+.loca_wrap ion-icon {
+    font-size: 3.5vw;
+    margin: auto;
+    margin-top: 0.5vw
+}
+
+.loca_wrap .mapView {
+    width: 100%;
+    height: 30vw;
+    background-color: #ccc;
+    overflow: hidden;
+}
+
+.scroller {
+    width: 90%;
+    margin: 5vw auto;
+    overflow: hidden;
+}
+
+/* .u_scroll{
+    height: 40vw;
+} */
+
+
+.u_scroll>div {
+    width: 100%;
+    font-size: 3.5vw;
+    margin-bottom: 1vw;
+    font-weight: bold;
+}
+
+.scroller .item_scroller {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.u_scroll .item_scroller li {
+    width: 30vw;
+    height: 30vw;
+    list-style: none;
+    /* float: left; */
+    display: inline-block;
+    position: relative;
+    margin-right: 3vw;
+}
+
+.u_scroll li>.scroll_state {
+    position: absolute;
+    z-index: 5;
+    margin: 0;
+    padding: 1vw 1.5vw;
+    text-align: center;
+    font-size: 2.5vw;
+    line-height: 3vw;
+    background-color: #B9A4FF;
+    color: white;
+}
+
+.u_scroll li .items {
+    width: 30vw;
+    height: 30vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3.5vw;
+}
+
+.items img {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.items>.scroll_title {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    font-size: 3vw;
+    line-height: 5vw;
+    text-align: left;
+    bottom: 0;
+    /* text-indent: 2vw; */
+    z-index: 5;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+
+}
+
+.scroll_title>p {
+    width: 100%;
+    text-indent: 2vw;
+    margin: auto;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    word-wrap: break-word;
+
+}
+
+.scroller .slick-prev {
+    position: absolute;
+    width: 0;
+    height: 0;
+    text-indent: -9999px;
+    outline: none;
+    border: none;
+}
+
+.scroller .slick-next {
+    position: absolute;
+    width: 0;
+    height: 0;
+    text-indent: -9999px;
+    outline: none;
+    border: none;
+}
+
+/* 같은 거래소 상품 슬라이더 */
+.scroller .ex_scroller {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    line-height: 35vw;
+    padding: 0;
+    margin: 0;
+}
+
+.ex_scroll {
+    /* height: 38vw; */
+    margin-bottom: 10vw;
+}
+
+.ex_scroll>div {
+    width: 100%;
+    font-size: 3.5vw;
+    margin-bottom: 1vw;
+    font-weight: bold;
+}
+
+.ex_scroll .ex_scroller li {
+    width: 30vw;
+    height: 30vw;
+    list-style: none;
+    /* float: left; */
+    display: inline-block;
+    position: relative;
+    margin-right: 3vw;
+}
+
+
+.ex_scroll li>.scroll_state {
+    position: absolute;
+    z-index: 5;
+    margin: 0;
+    padding: 1vw 1.5vw;
+    text-align: center;
+    font-size: 2.5vw;
+    line-height: 3vw;
+    background-color: #B9A4FF;
+    color: white;
+}
+
+.ex_scroll li .items {
+    width: 30vw;
+    height: 30vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3.5vw;
+}
+
+
+
+
+.btn_wrap {
+    position: fixed;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2vw;
+    z-index: 6;
+}
+
+.g_price {
+    background-color: white;
+    box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.3);
+    float: left;
+    width: 50%;
+    /* height: 8vw; */
+    /* text-align: 8vw; */
+    font-size: 4.5vw;
+    padding: 2vw 0;
+    border-radius: 1.5vw;
+}
+
+.chatting {
+    float: right;
+    width: 40%;
+    background-color: #6c80f1;
+    box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 4vw;
+    padding: 2vw 0;
+    border-radius: 1.5vw;
+}

@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'ELAND_Choice_M';
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+input {
+    outline: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+}
+
+.cs_header {
+    width: 100%;
+    background-color: white;
+    height: 12vmin;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+}
+
+.cs_header ion-icon {
+    font-size: 6vmin;
+    position: relative;
+    top: 50%;
+    left: 2vmin;
+    transform: translateY(-50%);
+}
+
+.cs_header p {
+    position: relative;
+    left: 50%;
+    transform: translateX(-75%);
+}
+
+.cs_wrap {
+    margin-top: 15vmin;
+}
+
+.notice_wrap {
+    display: none;
+    width: 90%;
+    margin: auto;
+    padding: 5vmin 0;
+    background-color: #6c80f1;
+    border-radius: 2vmin;
+    color: white;
+    box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-weight: bold;
+}
+
+.notice_wrap .cs_num {
+    font-size: 10vmin;
+    letter-spacing: 1px;
+    padding: 2vmin 0;
+}
+
+.notice_wrap .cs_time {
+    font-size: 4vmin;
+    letter-spacing: .5px;
+    line-height: 6vmin;
+}
+
+.fa_wrap {
+    width: 90%;
+    margin: 5vmin auto;
+}
+
+.fa_wrap>p {
+    font-size: 5vmin;
+    font-weight: bold;
+    margin-bottom: 1vmin;
+
+}
+
+/* .fa_wrap>div{
+    margin: 5vmin auto;
+}
+
+.fa_wrap>div .question{
+    font-size: 4vmin;
+}
+.answer_wrap{
+    display: flex;
+    font-size: 3.5vmin;
+    margin: 1vmin auto;
+}
+.answer_wrap p{
+    float: left;
+}
+
+.answer_wrap .answer{
+    float: left;
+} */
+
+.fa_btn_wrap{
+    width: 100%;
+    margin: 1.2vmin auto;
+    text-align: center;
+}
+/* .fa_btn_wrap ul li{
+    width: 30%;
+    height: 7vmin;
+    margin: auto;
+    /* background-color: #6c80f1;
+    border:1px solid #ccc;
+    border-radius: 2vmin;
+    box-shadow: 1px 2px 3px 1px rgba(75, 75, 75, 0.2);
+} */
+.fa_btn_wrap input{
+    display: inline-block;
+    width: 30%;
+    height: 7vmin;
+    margin: 1.2vmin auto;
+    line-height: 7vmin;
+    font-size: 3.2vmin;
+    background-color: white;
+    border:1px solid #ccc;
+    border-radius: 2vmin;
+    box-shadow: 1px 2px 3px 1px rgba(75, 75, 75, 0.2);
+}
+
+.fa_btn_wrap input.on{
+    background-color: #6c80f1;
+    color:white
+
+}
+
+.fa_qna_wrap{
+    width: 100%;
+    margin:1.5vmin auto;
+}
+
+.question{
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    margin:2vmin auto;
+}
+
+.question .q_wrap{
+    width: 100%;
+    height: 8vmin;
+    line-height: 8vmin;
+    display: inline-block;
+    border-radius: 2vmin;
+    box-shadow: 2px 2px 5px 1px rgba(75, 75, 75, 0.2);
+    background-color: white;
+
+}
+.question .q_wrap p{
+    float: left;
+    width: 90%;
+    font-size: 4vmin;
+    text-indent: 1vmin;
+}
+
+.question ion-icon{
+    width: 10%;
+    font-size: 5vmin;
+    margin-top: 2vmin;
+}
+
+.question .a_wrap{
+    /* display: none; */
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    /* height: auto;
+    opacity: 1; */
+    position: relative;
+    top:0;
+    background-color: #ccc;
+    z-index: -1;
+    /* transition: all .5s; */
+}
+.question.on .a_wrap{
+    height:auto;
+    opacity: 1;
+}
+
+.question .a_wrap>.answer{
+    font-size:3.5vmin;
+    line-height: 4.5vmin;
+    font-weight: normal;
+    padding:3vmin;
+}

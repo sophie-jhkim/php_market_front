@@ -1,0 +1,61 @@
+
+.ui-widget-header {
+    border: 0px;
+    background: #fff;
+    color: #222222/*{fcHeader}*/
+    ;
+    font-weight: bold;
+}
+
+.ui-widget-header a {
+    color: #222222/*{fcHeader}*/
+    ;
+}
+
+.ui-widget td span,
+.ui-datepicker td a {
+    text-align: center;
+    width: 1.7em;
+    height: 1.1em;
+    margin-left: 0.16em;
+    padding-top: 0.45em;
+    padding-bottom: 0.45em;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    border: 1px solid #cecece;
+    background: #fff;
+    font-weight: normal;
+    color: #555555;
+}
+
+.ui-datepicker {
+    width: 13em;
+    margin-top: 0.2em;
+}
+
+.ui-datepicker th {
+    font-size: 0.4em;
+}
+
+.ui-datepicker table {
+    font-size: .7em;
+}
+
+.ui-datepicker .ui-datepicker-title {
+    font-size: 0.8em;
+}
+
+.ui-datepicker-trigger{
+    background-image: url("/images/icons/calendar-outline.svg");
+    background-repeat:no-repeat;
+    font-size: 4vmin;
+    position: absolute;
+    right: 2vmin;
+    top: 50%;
+    transform: translateY(-50%);
+    border:none;
+    background-color: white;
+}

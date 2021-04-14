@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#chat_container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'ELAND_Choice_M';
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+input {
+    outline: none;
+}
+
+.chat_list_header {
+    width: 100%;
+    background-color: white;
+    height: 12vmin;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    border-bottom: 1px solid #999;
+}
+
+.chat_list_header ion-icon {
+    font-size: 6vmin;
+    position: absolute;
+    top: 50%;
+    right: 2vmin;
+    transform: translateY(-50%);
+}
+
+
+/* 검색창 */
+
+.chat_list_header input {
+    opacity: 0;
+    width: 60%;
+    border: none;
+    background-color: #ccc;
+    height: 8vmin;
+    text-indent: 2vmin;
+    border-radius: 3vmin;
+    position: absolute;
+    right: 0;
+    top: 2vmin;
+    margin: auto;
+}
+
+.chat_list_header p {
+    position: relative;
+    left: 50%;
+    transform: translateX(-75%);
+}
+
+.chat_list_wrap {
+    width: 94%;
+    margin: 16vmin auto;
+}
+
+.chat_wrap {
+    display: inline-flex;
+    width: 100%;
+    height: 20vmin;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.chat_wrap .chat_img_wrap {
+    width: 15vmin;
+    height: 15vmin;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+    margin-top: 3vmin
+}
+
+.chat_wrap .chat_img_wrap img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.chat_content_wrap {
+    float: left;
+    width: 60%;
+    margin-left: 2vmin;
+    margin-top: 3vmin
+}
+
+.chat_content {
+    line-height: 4vmin;
+}
+
+.chat_content .u_nick {
+    font-size: 3vmin;
+    color: #666;
+}
+
+.chat_content .g_title {
+    font-size: 3vmin;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+.chat_content .last_chat {
+    margin-top: 1.5vmin;
+    font-size: 4.5vmin;
+    line-height: 5vmin;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+
+.notice_wrap {
+    float: right;
+    height: 100%;
+    margin: auto;
+}
+
+.last_chat_time {
+    /* float: right; */
+    color: #999;
+    font-size: 3vmin;
+    margin: 4vmin auto 0;
+}
+
+.chat_notice {
+    width: 4.5vmin;
+    height: 4.5vmin;
+    text-align: center;
+    font-size: 3.5vmin;
+    line-height: 5vmin;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    margin: 2vmin auto 0;
+}

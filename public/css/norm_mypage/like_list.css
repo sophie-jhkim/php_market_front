@@ -1,0 +1,227 @@
+
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'ELAND_Choice_M';
+}
+a{text-decoration: none;}
+
+input {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+}
+
+.like_header{
+    width: 100%;
+    background-color: white;
+    height: 12vmin;
+    position: fixed;
+    top:0;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+}
+.like_header a{
+    display: block;
+    height: 100%;
+    font-size: 6vmin;
+    position: absolute;
+}
+
+.like_header ion-icon{
+    font-size: 6vmin;
+    position: absolute;
+    top:50%;
+    left:2vmin;
+    transform: translateY(-50%);
+}
+
+.like_header p{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.no_list{
+    margin: 10vmin auto;
+    width: 100%;
+    text-align: center;
+    color:#333;
+    font-size: 4.5vmin;
+}
+.like_list{
+    margin: 15vmin auto;
+}
+.like_goods_wrap{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.like_goods_wrap>a {
+    width: 94%;
+    height: 20vmin;
+    border-radius: 2vmin;
+    display: flex;
+    /* overflow: hidden; */
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    margin: 3.5vmin auto 1.5vmin;
+    font-family: inherit;
+    /* padding: 0; */
+}
+
+.good_img{
+    width: 23%;
+    /* clear: both; */
+    float: left;
+    height: 100%;
+}
+
+ .like_goods .good_img .like_img_wrap{
+    width: 18vmin;
+    height: 18vmin;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2.5vmin;
+    margin: 1vmin;
+
+}
+
+.like_img_wrap .g_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.like_goods .like{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 5.5vmin;
+}
+
+.like_goods .g_content{
+    width: 73%;
+    height: 82%;
+    float: left;
+    text-align: left;
+    margin: 2vmin 0;
+    position: relative;
+
+}
+.g_content .g_title_wrap{
+    width: 95%;
+}
+
+.like_goods{
+    width: 100%;
+}
+
+
+.like_goods .g_title{
+    font-size: 4vmin;
+    /* font-weight: bold; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    margin-bottom: 0.5vmin;
+}
+.g_tag{
+    width: 100%;
+    font-size: 3.5vmin;
+    padding: 0;
+    color: rgb(78, 73, 73);
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.g_state_wrap{
+    height: 4vmin;
+    display: inline-block;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+.like_goods .g_price{
+    font-size: 4.5vmin;
+    font-weight: bold;
+    /* width: 50%; */
+    float: left;
+    /* position: absolute;
+    bottom:1vmin; */
+}
+
+.like_goods .g_state{
+    float: left;
+    font-weight: normal;
+    font-size: 2.5vmin;
+    background-color: #7d0491;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    margin-left: 5px;
+    padding: 3px;
+}
+.like_goods .upload_date{
+    font-size: 3vmin;
+    line-height: 5vmin;
+    float: right;
+    color: #666;
+}
+
+.like_btn_wrap{
+    width: 94%;
+    margin:auto;
+    text-align: center;
+    position: relative;
+}
+
+.like_btn_wrap ion-icon{
+    font-size: 3.5vmin;
+    position: absolute;
+    left: 40%;
+    top:50%;
+    transform: translate(-60% , -50%);
+    color:white;
+}
+.like_btn_wrap>input{
+    width: 100%;
+    font-size: 3.4vmin;
+    border:none;
+    background-color: #6c80f1;
+    color:white;
+    padding: 1.2vmin 0;
+    border-radius: 2.5vmin;
+}
+

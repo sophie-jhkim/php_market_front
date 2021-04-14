@@ -1,0 +1,218 @@
+@font-face {
+    font-family: "ELAND_Choice_M";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "ELAND_Choice_M";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    outline: none;
+}
+
+
+.point_header {
+    width: 100%;
+    background-color: white;
+    height: 12vmin;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+}
+
+.point_header a {
+    font-size: 6vmin;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 2vmin;
+    transform: translateY(-50%);
+}
+
+.point_header p {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.point_content_wrap {
+    margin: 15vmin auto 90px;
+    width: 90%;
+    text-align: center;
+}
+
+.point_info_wrap {
+    display: inline-flex;
+    background-color: #DCBCD9;
+    width: 100%;
+    border-radius: 2vmin;
+    box-shadow: 1px 3px 5px 1px rgba(75, 75, 75, 0.3);
+    margin: auto;
+    padding: 2vmin 0;
+}
+
+.point_info_wrap .icon_wrap {
+    width: 12%;
+    height: 100%;
+    margin: auto;
+}
+
+.point_info_wrap .icon_wrap img {
+    width: 100%;
+}
+
+.point_info_wrap .total_point {
+    height: 100%;
+    color: white;
+    font-size: 4vmin;
+    margin: auto 2vmin;
+    text-align: left;
+    width: 53%;
+}
+
+.point_info_wrap .total_point>div:last-child {
+    font-size: 3.2vmin;
+    display: flex;
+    margin-top: 3px;
+}
+
+.point_info_wrap .total_point>div:last-child p {
+    margin-left: 5px;
+}
+
+.point_info_wrap>div:last-child {
+    width: 25%;
+    margin: auto;
+}
+
+.point_info_wrap>div:last-child input {
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+    font-size: 3.2vmin;
+    background-color: #DCBCD9;
+    border-radius: 1vmin;
+    box-shadow: 1px 2px 5px 1px rgba(75, 75, 75, 0.3);
+}
+
+.period_btn_wrap {
+    width: 100%;
+    display: inline-flex;
+    margin: 2.5vmin auto 1vmin;
+}
+
+.period_btn_wrap input {
+    border: 1px solid #C2C2C2;
+    font-size: 3vmin;
+    height: 6vmin;
+    background-color: white;
+    flex: 1;
+    margin: auto 1vmin;
+}
+
+.period_btn_wrap input.on {
+    background-color: #999;
+    color: white;
+}
+
+.period_wrap {
+    display: inline-flex;
+    width: 100%;
+    line-height: 6vmin;
+    font-size: 4vmin;
+    margin: auto;
+}
+
+.period_wrap div {
+    flex: 1;
+    margin: auto 2px;
+    position: relative;
+}
+
+.period_wrap div input {
+    border: none;
+    border-bottom: 1px solid #707070;
+    outline: none;
+    font-size: 3vmin;
+    text-indent: 2px;
+    padding: 1vmin;
+}
+
+.period_wrap div ion-icon {
+    font-size: 4vmin;
+    position: absolute;
+    right: 2vmin;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.point_detail_wrap{
+    width: 100%;
+    margin: 2vmin auto;
+}
+.point_detail_wrap ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.point_detail_wrap ul li {
+    width: 100%;
+    display: inline-flex;
+    height: 8vmin;
+    line-height: 8vmin;
+    margin: 1.5vmin auto;
+}
+.point_detail_wrap ul li>div{
+    font-size: 3vmin;
+}
+
+.point_detail_wrap ul li>div:first-child {
+    width: 15%;
+
+}
+
+.point_detail_wrap ul li>div:nth-child(2n) {
+    width: 70%;
+    font-size: 3.5vmin;
+}
+
+.point_detail_wrap ul li>div:nth-child(2n) div {
+    width: 12%;
+    display: inline-flex;
+    float: left;
+}
+
+.point_detail_wrap ul li>div:nth-child(2n) div img {
+    width: 100%;
+}
+.point_detail_wrap ul li>div:nth-child(2n) p{
+    text-align: left;
+    text-indent: 5px;
+}
+.point_detail_wrap ul li>div:last-child {
+    width: 15%;
+    color: #6c80f1;
+}
+
+.point_detail_wrap ul li>div:last-child.on{
+    color:#FF6767;
+}

@@ -1,0 +1,229 @@
+
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'ELAND_Choice_M';
+}
+a{text-decoration: none;}
+
+input {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+}
+
+.buy_header{
+    width: 100%;
+    background-color: white;
+    height: 12vmin;
+    position: fixed;
+    top:0;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    line-height: 12vmin;
+    font-size: 4.5vmin;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+}
+.buy_header a{
+    display: block;
+    height: 100%;
+    font-size: 6vmin;
+    position: absolute;
+
+}
+
+.buy_header ion-icon{
+    font-size: 6vmin;
+    position: absolute;
+    top:50%;
+    left:2vmin;
+    transform: translateY(-50%);
+}
+
+.buy_header p{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.no_list{
+    margin: 10vmin auto;
+    width: 100%;
+    text-align: center;
+    color:#333;
+    font-size: 4.5vmin;
+}
+.buy_list{
+    margin: 15vmin auto;
+}
+.buy_goods_wrap{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.buy_goods_wrap>a {
+    width: 94%;
+    height: 20vmin;
+    border-radius: 2vmin;
+    display: flex;
+    /* overflow: hidden; */
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+    margin: 3.5vmin auto 1.5vmin;
+    font-family: inherit;
+    padding: 0;
+}
+
+ .buy_goods .buy_img_wrap{
+    width: 18vmin;
+    height: 18vmin;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    border-radius: 2.5vmin;
+    margin-left: 2vmin;
+
+}
+
+.buy_img_wrap .g_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.buy_goods .like{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 5.5vmin;
+}
+
+.buy_goods .g_content{
+    float: left;
+    text-align: left;
+    margin: 2vmin;
+    width: 73%;
+    height: 82%;
+    position: relative;
+
+}
+
+.buy_goods{
+    width: 100%;
+}
+
+.g_content .g_title_wrap{
+    width: 95%;
+}
+
+.buy_goods .g_title{
+    font-size: 4vmin;
+    /* font-weight: bold; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    margin-bottom: 0.5vmin;
+}
+.g_tag{
+    font-size: 2.8vmin;
+    padding: 0;
+    margin: 1vmin auto 3.5vmin;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.g_state_wrap{
+    height: 4vmin;
+    display: inline-block;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+}
+
+.buy_goods .g_price{
+    font-size: 4.5vmin;
+    font-weight: bold;
+    float: left;
+}
+
+.buy_goods .g_state{
+    float: left;
+    font-weight: normal;
+    font-size: 2.5vmin;
+    background-color: #7d0491;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    margin-left: 5px;
+    padding: 3px;
+}
+.buy_goods .upload_date{
+    font-size: 3vmin;
+    line-height: 5vmin;
+    float: right;
+    color: #666;
+}
+
+.buy_btn_wrap{
+    width: 94%;
+    margin:auto;
+    text-align: center;
+    position: relative;
+}
+
+.buy_btn_wrap>input{
+    width: 100%;
+    font-size: 3.4vmin;
+    border:none;
+    background-color: #6c80f1;
+    color:white;
+    padding: 1.2vmin 0;
+    border-radius: 2.5vmin;
+}
+
+.reviewY>input{
+    background-color: white;
+    border:1px solid #707070;
+    color:#666
+}
+
+.soldout{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color:white;
+    line-height: 18vmin;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'ELAND_Choice_M';
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.filter {
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    /* left: 0; */
+    left: -70%;
+    /* padding-left: 3vmin; */
+    z-index: 1001;
+    transition: all;
+}
+
+.category_wrap {
+    width: 100%;
+}
+
+.filter .cate_sorting {
+    width: 100%;
+    background-color: #E9E9E9;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #666;
+}
+
+.filter_header {
+    height: 12vmin;
+    display: flex;
+}
+
+.filter_header p {
+    padding: 0;
+    margin: auto;
+    color: #6c80f1;
+    font-size: 6vmin;
+    font-weight: bold;
+    line-height: 10vmin;
+    text-indent: 2vmin;
+    padding-left: 4vmin;
+}
+.filter_header p>img{
+    width: 65%;
+}
+
+.filter_header .filter_close {
+    font-size: 6vmin;
+    position: absolute;
+    right: 1vmin;
+    top: 3vmin;
+    transform: rotate(-180deg);
+    transition: all;
+}
+
+.cate_subt {
+    display: inline-block;
+    height: 8vmin;
+    width: 100%;
+}
+
+.cate_subt p {
+    margin: 0;
+    padding: 0;
+    float: left;
+    line-height: 8vmin;
+    font-size: 4vmin;
+    padding-left: 4vmin;
+}
+
+.cate_subt>button {
+    float: right;
+    margin-right: 2vmin;
+    margin-top: 2vmin;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+.cate_sorting input {
+    width: 100%;
+    line-height: 7vmin;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none
+}
+
+.cate_sorting input.on {
+    background-color: #6c80f1;
+    color: white;
+}
+
+.list_sorting,
+.ect_sorting {
+    padding: 4vmin 0 0 4vmin;
+    margin: 0;
+    line-height: 7vmin;
+    font-size: 3.4vmin;
+}
+
+.list_sorting p,
+.ect_sorting p {
+    font-weight: bold;
+}
