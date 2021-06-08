@@ -14,10 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('goods.index');
 });
 
 //DB 못쓰니까 튜플방식으로 연결
+
+Route::get('/signUp', function () { return view('auth.sign_up');})->name('signUp');
+Route::get('/signIn', function () { return view('auth.sign_in');})->name('signIn');
 
 
 //goods

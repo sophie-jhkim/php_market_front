@@ -258,13 +258,17 @@
                     <ion-icon name="information-circle-outline"></ion-icon>
                     <p>고객센터</p>
                 </a></li>
-            <li><a href="#">
+            <li><a href="{{route('signUp')}}">
                     <ion-icon name="settings-outline"></ion-icon>
-                    <p>설정</p>
+                    <p>설정(회원가입폼)</p>
                 </a></li>
             <li><a href="#">
                     <ion-icon name="log-out-outline"></ion-icon>
                     <p>로그아웃</p>
+                </a></li>
+                <li><a href="{{route('signIn')}}">
+                    <ion-icon name="log-in-outline"></ion-icon>
+                    <p>로그인</p>
                 </a></li>
         </ul>
     </div>
