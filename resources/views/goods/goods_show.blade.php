@@ -22,7 +22,7 @@
                     <ion-icon name="arrow-back-outline"></ion-icon>
                 </a></li>
             <li class="g_category">
-                <div>반려용품</div>
+                <div>잡화</div>
             </li>
             <li class="share"><a href="#">
                     <ion-icon name="share-social-outline"></ion-icon>
@@ -71,7 +71,7 @@
                 <ion-icon name="chevron-forward"></ion-icon>
             </div>
             <div class="mapView">
-                지도 여기용
+                <img src="images/etc/map.jpg" alt="지도">
             </div>
         </div>
         <div class="scroller">
