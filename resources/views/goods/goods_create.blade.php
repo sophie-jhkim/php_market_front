@@ -8,7 +8,8 @@
 
     <div class="write_header">
         <div id="title_back">
-            <a href="javascript:void(0)" onclick="create_close()" id="original_close" class="write_back">
+            <a href="javascript:history.back();"id="original_close" class="write_back">
+            <!-- <a href="javascript:void(0)" onclick="create_close()" id="original_close" class="write_back"> -->
                 <ion-icon name="arrow-back-outline"></ion-icon>
             </a>
         </div>

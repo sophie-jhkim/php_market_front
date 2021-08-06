@@ -15,10 +15,10 @@
             <div>
                 <ul class="user_info">
                     <li>
-                        <p class="u_nick">아이유마켓</p>
+                        <p class="u_nick">서윗심바</p>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="{{route('mypage_info_update')}}">
                             <ion-icon name="settings"></ion-icon>
                         </a>
                     </li>

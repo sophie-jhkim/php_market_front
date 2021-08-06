@@ -22,7 +22,7 @@
 </section>
 
 <section class="map_wrap">
-    <div id="mapview" class="map"></div>
+    <div id="mapview" class="map"><img src="/images/etc/largemap.jpg" alt="지도"></div>
     <input type="button" value="지도 보기" class="btn_map" id="btn_map">
     <input type="hidden" value="상품보기" id="btn_map_hid">
 </section>
@@ -46,13 +46,6 @@
     <input type="hidden" name="ex_addr_tr" id="ex_addr_tr">
     <input type="hidden" name="ex_lo_la_tr" id="ex_lo_la_tr">
 </form>
-{{-- <script>
-    var positions= [];
-    var o_a = [];
-    @foreach($exchange as $exchange)
-        var lo_la = '{{ $exchange->ex_lo_la }}';
-        o_a.push(lo_la.split('_'));
-    @endforeach
-</script> --}}
+
 <script type="text/javascript" src="/js/goods/goods_maps.js"></script>
 @endsection

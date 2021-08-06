@@ -43,8 +43,8 @@
                                 </div>
                             </div>
                             <div class="notice_wrap">
-                                <p class="last_chat_time">20분전</p>
-                                <p class="chat_notice">1</p>
+                                <p class="last_chat_time">5분전</p>
+                                <!-- <p class="chat_notice">1</p> -->
                             </div>
 
                         </div>

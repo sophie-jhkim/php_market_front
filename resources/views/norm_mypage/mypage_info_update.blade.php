@@ -22,7 +22,7 @@
 
 
         <ul>
-            <li><input type="text" name="" id="u_name" value="박서준"></li>
+            <li><input type="text" name="" id="u_name" value="홍길동"></li>
             <li><input type="text" name="" id="u_phone" readonly value="010-1234-5678"></li>
             <li class="email_wrap">
                 <input type="text" class="u_email1" id="u_email1" value="youwillstay">@
@@ -36,7 +36,7 @@
                 <input type="button" value="중복확인" class="email_chk">
             </li>
             <li class="nick_wrap">
-                <input type="text" class="u_nick" id="u_nick" value="아이유마켓">
+                <input type="text" class="u_nick" id="u_nick" value="서윗심바">
                 <input type="button" value="중복확인" class="nick_chk">
             </li>
         </ul>
